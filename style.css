@@ -1,0 +1,116 @@
+@import url('https://fonts.google.com/specimen/Inter');
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(233, 47%, 7%);
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+
+}
+.card{
+    background-color: hsl(244, 38%, 16%);
+    width: 60%;    
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+}
+.image{
+    width: 50%;   
+    background:url(images/image-header-desktop.jpg) no-repeat center center;
+    background-size: cover;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+.image div{
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 64%, 61%, 0.534);
+}
+.info{
+    width: 50%;    
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;  
+
+}
+h1 span{
+    color: hsl(277, 64%, 61%);
+
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 25px;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+
+}
+.tags{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 0.8em;
+}
+.tags h2{
+    margin: 5px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 768px){
+    main{
+        height: max-content;
+    }
+    .card{
+        margin-top: 25px;
+        width: 75%;
+    }
+
+}
+@media only screen and (max-width: 425px){
+    main{
+        height: max-content;
+    }
+    .card{
+        margin: 25px 0;
+       display: flex;      
+        flex-direction: column-reverse;
+    }
+    .image{
+        height: 50vh;
+        width: 100%;
+        background-size: cover;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .info{
+        width: 100%;
+        padding: 5%;
+        text-align: center;
+    }
+    .tags{
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+}
